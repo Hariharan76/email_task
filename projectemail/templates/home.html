@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+  <style>
+    /* Style the navigation bar */
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+    <nav>    
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+    </nav>
+    <h1>Email Integration</h1>
+
+    <p>
+        We offer a variety of email integration solutions to help you connect your email marketing campaigns with your CRM, website, and other applications. Our solutions are easy to use and can help you save time and improve your results.
+    </p>
+    <a href="https://www.example.com/email-integration">Learn more about our email integration solutions</a>
+</body>
+</html>
+{% endblock %}
